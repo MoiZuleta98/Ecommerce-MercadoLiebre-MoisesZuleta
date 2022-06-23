@@ -1,0 +1,374 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.main-header{
+    background-color: #EAC926; 
+    padding-bottom: 20px; 
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+#logo{
+    width: 50%;
+    padding: 10px;
+}
+
+header div .container-search{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    width: 50%;
+    
+}
+
+.lupa{
+    color: #000000;
+    border: 1px solid #666;
+    background-color: #ffffff;
+    font-size: 14px; 
+}
+
+.input_text{
+    width: 100%;
+}
+
+::placeholder {
+    text-align: center; 
+  }
+
+.main-header .copy-header{ /*selector descendente con class*/
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* .main-navbar{
+    display: none;
+} */
+
+header nav{
+    margin-left: 20px;
+}
+
+.main-navbar ul {     /*listas que estan en el main-navbar*/
+    list-style: none;
+    
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0px;
+    font-size: 12px;
+}
+
+.hamburguer-button{
+    background-color: #1259c3;
+    color: #ffffff;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;     /*La 1ra es para la parte inefrior y la 2da para los costados*/
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+main section article img{
+    width: 100%;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right:20px;
+    top: -15px;
+}
+
+main section div.products article i{
+    transition: 1s;
+}
+
+main section div.products article i:hover { /*= article:hover i{*/
+    transform: rotate(-90deg);
+}
+
+section div.last-visit, 
+section div.offers{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.price{
+    font-size: 18px;
+    width: 30%;     /*ver porq no se ve diferencia*/
+}
+
+.discount{
+    width: 70%;   /*ver porq no se ve diferencia*/
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+main section article:hover .description{ /*Con esta trancicion traigo el display:none de la description */
+    display: block;
+}
+
+
+footer{
+    text-align: center;
+    background-color: #ffffff;
+   
+}
+
+footer .icons-footer{
+    font-size: 2em;   /*Cuando me pida un tamaño usar la propiedad font-size*/
+    margin-top:20px;
+    margin-bottom: 10px;
+    color: #1259c3;
+    
+}
+
+/*login.html-register.html*/
+
+.login form,
+.register form .register-input_top, .register-input_center,.register-input_bottom{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form input, button{         
+    margin: 17px 0;
+    border: none;
+    border-radius: 3px;
+}
+
+button.submit-login,         
+.buttons-register{
+   background-color: #6b9eeb;
+   color: #ebebeb;
+   font-weight: 300;
+}
+
+.register form button.buttons-register,
+.login form button,
+input[type='text'], 
+input[type='password'], 
+input[type='email'],
+input[type='date']{          
+    padding: 8px 0 ;
+}
+
+.login form button:hover,       
+.register form button:hover{
+    background-color: #0022AA;
+}
+
+/*register.html*/
+
+.register form button.buttons-register{ 
+    width: 100%;
+}
+
+
+
+@media (min-width: 361px){              /*mobile*/
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    
+}
+
+@media (min-width: 769px){    /*desktop & tablet*/
+    .main-header{
+        padding: 20px;
+    }
+
+    .hamburguer-button{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;  
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+
+    .main-navbar a{
+        display: inline-block;
+        padding: 5px 0px;
+        font-size: 17px;
+    }
+
+    main section div.products article{
+        width: 22%;
+    }
+
+    footer div.data{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    footer div.data .pago,.envios,.seguridad{
+        width: 30%;
+    }
+
+    footer div.copyright{
+        display: flex;
+        justify-content: left;
+        padding-top: 20px;
+    }
+
+    footer div.data div i:hover{
+        transition: all 1s;
+    }
+
+    footer div.data div i:hover{
+        color: #39b54a;
+    }
+
+    /*Nav longin.html*/
+
+    .login form{
+       align-items: center;
+    }
+
+    .login form input, .submit-login{
+        width: 50%;
+    }
+
+    /*Nav register.html*/
+
+    main.register{
+        position: relative;
+    }
+
+    .form_register{
+        position: relative;
+        left: 300px;
+    }
+    
+    .register form .register-input_top, .register-input_center,.register-input_bottom,.conteiner-buttons{
+        width: 40%;
+    }
+
+}
+
+
+
+
+
+
+
+
