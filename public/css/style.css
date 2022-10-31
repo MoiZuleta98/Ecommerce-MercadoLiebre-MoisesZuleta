@@ -85,6 +85,7 @@ header nav{
     color: #000000;
     padding: 5px 0px;
     font-size: 12px;
+    display: none;
 }
 
 .hamburguer-button{
@@ -106,6 +107,14 @@ section.banner img{
 main{
     width: 90%;
     margin: 0 auto;
+}
+
+main section div.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 main section article{
@@ -258,37 +267,48 @@ input[type='date']{
 
 /*register.html*/
 
+
+
 .register form button.buttons-register{ 
     width: 100%;
 }
 
 
 
-@media (min-width: 361px){              /*mobile*/
 
-    main section div.products{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+@media (min-width: 570px){    /*tablet*/
+
+    footer p{
+        text-align: center;
+        background-color: #ffffff;
+        font-size: 14px;
+    }
+    footer .copyright{
+        padding-bottom: 10px;
     }
 
-    main section div.products article{
-        width: 45%;
-    }
-
-    .price,
-    .discount{
-        width: 50%;
-    }
-    
-}
-
-@media (min-width: 769px){    /*desktop & tablet*/
     .main-header{
-        padding: 20px;
+        padding: 15px;
     }
+
+    div.top-header{
+        flex-wrap: nowrap;
+        padding: 1%;
+        align-items: center;
+    }
+
+    #logo{
+        width: 33.3%;
+    }
+
+    header div .container-search{
+        width: 33.3%;
+    }
+
+    .main-header .copy-header{ 
+        width: 33.3%;
+    }
+
 
     .hamburguer-button{
         display: none;
@@ -308,11 +328,23 @@ input[type='date']{
     .main-navbar a{
         display: inline-block;
         padding: 5px 0px;
-        font-size: 17px;
+        font-size: 12px;
     }
 
     main section div.products article{
-        width: 22%;
+        width: 43%;
+        margin: 10px;
+    }
+
+    article div.main-article{
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+        font-size: 14px;
     }
 
     footer div.data{
@@ -338,37 +370,85 @@ input[type='date']{
         color: #39b54a;
     }
 
-    /*Nav longin.html*/
-
-    .login form{
-       align-items: center;
-    }
-
-    .login form input, .submit-login{
-        width: 50%;
-    }
-
     /*Nav register.html*/
 
-    main.register{
-        position: relative;
-    }
-
     .form_register{
-        position: relative;
-        left: 300px;
-    }
-    
-    .register form .register-input_top, .register-input_center,.register-input_bottom,.conteiner-buttons{
-        width: 40%;
+        text-align: center;
     }
 
+    .register form button.buttons-register,
+.login form button,
+input[type='text'], 
+input[type='password'], 
+input[type='email'],
+input[type='date']{          
+    padding: 8px 0 ;
+    width: 45%;
 }
 
+.login form,
+.register form .register-input_top, .register-input_center,.register-input_bottom{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.login form{
+    margin: 65px 0;
+}
+    
+}
 
+@media (min-width: 750px){   /*desktop*/
 
+    .main-header .copy-header{ 
+        width: 33.3%;
+        font-size: 17px;
+    }
 
+    .main-navbar a{
+        display: inline-block;
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+
+    main section div.products article{
+        width: 22%;
+        margin: 10px;
+    }
+
+    /*resgister*/
+
+    .register form button.buttons-register,
+.login form button,
+input[type='text'], 
+input[type='password'], 
+input[type='email'],
+input[type='date']{          
+    width: 40%;
+}
+}
+
+@media (min-width: 1200px){
+    .register form button.buttons-register,
+.login form button,
+input[type='text'], 
+input[type='password'], 
+input[type='email'],
+input[type='date']{          
+    width: 30%;
+}
+
+.login form{
+    margin: 135px 0;
+}
+
+footer.footer-login{
+    padding: 10px 0;
+}
+
+}
 
 
 
