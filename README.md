@@ -26,6 +26,7 @@ Url del proyecto levantado en Heroku: https://mi-app-mercado-liebree.herokuapp.c
 
 VISTAS DEL PROYECTO
 
+
 Home: https://mi-app-mercado-liebree.herokuapp.com/
 
 Formulario de registro: https://mi-app-mercado-liebree.herokuapp.com/register
