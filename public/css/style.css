@@ -231,11 +231,34 @@ footer .icons-footer{
 
 /*login.html-register.html*/
 
-.login form,
-.register form .register-input_top, .register-input_center,.register-input_bottom{ 
+.form_register{
+    background-color: #d4d4d4;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.login form,
+.register form .register-input_top, .register-input_center,.register-input_bottom, 
+.conteiner-buttons,
+.birth_date, 
+.userProfile,
+.interests-h4, .interests,
+.userFile, .inputFile{ 
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 5%;
+}
+
+div.profile{
+   padding-left: 10%;
+   width: 90%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-around;
+   align-items: center;
 }
 
 form input, button{         
@@ -256,24 +279,16 @@ button.submit-login,
 input[type='text'], 
 input[type='password'], 
 input[type='email'],
-input[type='date']{          
-    padding: 8px 0 ;
+input[type='date'],
+input[type='file']{         
+    padding: 8px 5% ;
+    
 }
 
 .login form button:hover,       
 .register form button:hover{
     background-color: #0022AA;
 }
-
-/*register.html*/
-
-
-
-.register form button.buttons-register{ 
-    width: 100%;
-}
-
-
 
 
 @media (min-width: 570px){    /*tablet*/
@@ -372,27 +387,17 @@ input[type='date']{
 
     /*Nav register.html*/
 
-    .form_register{
-        text-align: center;
+    main.register{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
     }
 
-    .register form button.buttons-register,
-.login form button,
-input[type='text'], 
-input[type='password'], 
-input[type='email'],
-input[type='date']{          
-    padding: 8px 0 ;
-    width: 45%;
-}
-
-.login form,
-.register form .register-input_top, .register-input_center,.register-input_bottom{ 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
+    form.form_register{
+        width: 60%;
+        
+    }
 
 .login form{
     margin: 65px 0;
