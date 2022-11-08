@@ -387,14 +387,14 @@ input[type='file']{
 
     /*Nav register.html*/
 
-    main.register{
+    main.register, main.login{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
     }
 
-    form.form_register{
+    form.form_register,.login form{
         width: 60%;
         
     }
@@ -423,6 +423,11 @@ input[type='file']{
         margin: 10px;
     }
 
+    form.form_register, .login form{
+        width: 50%;
+        
+    }
+
     /*resgister*/
 
     .register form button.buttons-register,
@@ -431,7 +436,7 @@ input[type='text'],
 input[type='password'], 
 input[type='email'],
 input[type='date']{          
-    width: 40%;
+    width: 100%;
 }
 }
 
@@ -442,7 +447,16 @@ input[type='text'],
 input[type='password'], 
 input[type='email'],
 input[type='date']{          
+    width: 100%;
+}
+
+form.form_register, .login form{
     width: 30%;
+    
+}
+
+div.profile {
+    width: 70%;
 }
 
 .login form{
